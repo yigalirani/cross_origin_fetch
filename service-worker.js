@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   const RULE = {
     id: 1,
-    condition:{urlFilter: "*://*/*",resourceTypes: ['main_frame'] },
+    condition:{resourceTypes: ['xmlhttprequest'] },
     action: {
       type: 'modifyHeaders',
       responseHeaders: [
